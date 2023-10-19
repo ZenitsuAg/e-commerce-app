@@ -14,12 +14,12 @@ export default function Recommended() {
     )
 }
 
-function Item() {
+export function Item({className}) {
     return (
-        <div className="bg-white rounded border border-slate-200 p-2">
+        <div className={`p-2 bg-white border rounded border-slate-200 ${className}`}>
             <div className="h-48"></div>
             <p className="font-medium">$10.30</p>
-            <p className="text-slate-400 text-sm">T-shirts with multiple colors, for men</p>
+            <p className="text-sm text-slate-400">T-shirts with multiple colors, for men</p>
         </div>
     )
 }
